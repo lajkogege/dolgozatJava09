@@ -17,7 +17,7 @@ public class Tábla {
     }
 
     public Tábla(char ÜresCella, char[] [] T) {
-        this(ÜresCella, T [ÜresCella] [ÜresCella]);
+        //this(ÜresCella, T [ÜresCella] [ÜresCella]);
 
     }
 
