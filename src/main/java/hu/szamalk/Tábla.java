@@ -5,9 +5,16 @@ public class Tábla {
     private char ÜresCella;
 
 
-    public Tábla( char ÜresCella, char [][] t {
-        this.ÜresCella = ÜresCella;
-        this.T = t;
+    public Tábla() {
+        this('ß');
+    }
+
+    public Tábla(char üresCella) {
+        this(üresCella, new char[üresCella][üresCella]);
+    }
+
+    public Tábla(char ÜresCella, char [][] T) {
+        this(ÜresCella, char [][] );
 
     }
 
@@ -17,5 +24,12 @@ public class Tábla {
         }
     }
 
-    
+
+    public void Megjelenit(){
+        System.out.println("4.feladat: Az üres tábla:");
+        for (int i = 0; i <T.length ; i++) {
+            System.out.print(T[i][i]);
+        }
+    }
+
 }
