@@ -43,6 +43,7 @@ public class Tábla {
             if(this.T[i][i] == this.ÜresCella){
                if (random==1){
                    this.T[i][i]= [jel] [jel];
+                   //VÉGE
                }
             }
         }
