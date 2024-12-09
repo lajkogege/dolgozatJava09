@@ -1,47 +1,48 @@
 package hu.szamalk;
 
 public class Betuk {
-    public String nevem = "Gergő";
+    public String szoveg;
     public char betuTomb[] = new char[1];
 
+
     public Betuk() {
+        this("gergő");
 
     }
 
-
-    public Betuk(String nevem, char[] betuTomb) {
-        this.nevem = nevem;
-        this.betuTomb = betuTomb;
+    public Betuk(String szoveg) {
+        this.szoveg = String.valueOf(szoveg);
 
     }
+
 
 
     public char[] feltolt() {
         for (int i = 0; i < betuTomb.length; i++) {
-            this.betuTomb = getNevem().toCharArray();
+            this.betuTomb = getSzoveg().toCharArray();
         }
 
         return betuTomb;
     }
 
-    public void megjelenitVesszovel(){
+
+
+    public  void veszovelMegjelenit() {
         for (int i = 0; i < betuTomb.length; i++) {
             if (i > 0) {
-                System.out.print(",");
+                kiir(",");
             }
-            System.out.print("" + getNevem());
+            kiir("" + betuTomb[i]);
         }
-
     }
+
     public void kiir(String szoveg){
         System.out.print(szoveg);
     }
 
-
-    public String getNevem() {
-        return nevem;
+    public String getSzoveg() {
+        return szoveg;
     }
-
 }
 
 

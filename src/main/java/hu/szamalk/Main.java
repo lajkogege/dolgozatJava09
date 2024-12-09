@@ -8,7 +8,8 @@ public class Main {
     
     //F3Kezdes
         Betuk b = new Betuk();
-        b.megjelenitVesszovel();
+        b.feltolt();
+        b.veszovelMegjelenit();
     }
 
 
