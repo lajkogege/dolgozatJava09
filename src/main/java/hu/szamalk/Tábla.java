@@ -17,7 +17,7 @@ public class Tábla {
     }
 
     public Tábla(char ÜresCella, char[] [] T) {
-        this(ÜresCella, T [ÜresCella] [null]);
+        this(ÜresCella, T [ÜresCella] [ÜresCella]);
 
     }
 
@@ -42,7 +42,7 @@ public class Tábla {
         for (int i = 0; i < N; i++) {
             if(this.T[i][i] == this.ÜresCella){
                if (random==1){
-                   this.T[i][i]= [jel] [jel];
+                   this.T[i][i]= T[jel] [jel];
                    //VÉGE
                }
             }
